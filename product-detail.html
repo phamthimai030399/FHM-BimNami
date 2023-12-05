@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./wow/animate.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <title>GoldGi</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header id="fhm-header" class="header">
+      <div class="container">
+        <div class="header-container d-flex justify-content-between">
+          <div class="header-logo">
+            <a href="">
+              <img src="./image/logo.png" alt="" />
+            </a>
+          </div>
+          <div class="header-main">
+            <div class="header-menu">
+              <ul>
+                <li><a href="">Trang chủ</a></li>
+                <li><a href="">Giới thiệu</a></li>
+                <li><a href=""> Sản phẩm</a></li>
+                <li><a href=""> Tin Tức</a></li>
+                <li><a href="">Liên Hệ</a></li>
+              </ul>
+            </div>
+            <div class="header-search">
+              <form action="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                >
+                  <path
+                    d="M12.755 13.2941L12.649 13.4002C11.7468 12.4985 10.845 11.5967 9.94385 10.6939L12.9128 13.4355C12.8573 13.3972 12.8084 13.3479 12.7604 13.2995L12.755 13.2941ZM12.755 13.2941L12.6485 13.3997C12.6511 13.4024 12.6538 13.405 12.6564 13.4077C12.7024 13.4541 12.7602 13.5124 12.8274 13.5589L12.8278 13.5592C13.0345 13.7012 13.3128 13.6722 13.4887 13.5037L13.4888 13.5036C13.6716 13.3283 13.705 13.0386 13.5579 12.8251L13.5578 12.8249C13.5137 12.7612 13.4581 12.7055 13.4142 12.6616C13.4091 12.6565 13.4041 12.6515 13.3994 12.6467L13.3991 12.6464C13.3015 12.5488 13.2039 12.4511 13.1064 12.3535C12.4276 11.6742 11.7489 10.995 11.0691 10.3165C10.9519 10.1995 10.8316 10.0839 10.7105 9.96758C10.6876 9.94552 10.6646 9.92344 10.6416 9.90131M12.755 13.2941L10.6416 9.90131M10.6416 9.90131C12.6772 7.41663 12.3291 3.95458 10.1476 1.91193C7.96045 -0.136037 4.55386 -0.176885 2.29415 1.82965L2.29414 1.82965C0.0550959 3.81793 -0.300732 7.21289 1.49159 9.62851L10.6416 9.90131ZM1.41065 6.15026C1.41685 3.53305 3.56417 1.40109 6.18952 1.40764C8.81235 1.41418 10.9346 3.55113 10.9304 6.18343C10.9263 8.81478 8.79924 10.934 6.16524 10.9302H6.16503H6.16489C3.53023 10.9264 1.40479 8.79008 1.41065 6.15026ZM1.41065 6.15026L1.26065 6.14991L1.41065 6.15026Z"
+                    fill="black"
+                    stroke="black"
+                    stroke-width="0.3"
+                  />
+                </svg>
+                <input
+                  id="input-search"
+                  class=""
+                  type="seach"
+                  placeholder="Search"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="d-lg-none d-block d-flex">
+            <div
+              class="show-menu-mobile d-block d-xl-none d-lg-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#menumobile"
+              aria-controls="menumobile"
+            >
+              <svg
+                height="24"
+                viewBox="0 0 16 16"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="_31" data-name="31">
+                  <path
+                    d="m15.5 4h-15a.5.5 0 0 1 0-1h15a.5.5 0 0 1 0 1z"
+                  ></path>
+                  <path
+                    d="m15.5 9h-15a.5.5 0 0 1 0-1h15a.5.5 0 0 1 0 1z"
+                  ></path>
+                  <path
+                    d="m15.5 14h-15a.5.5 0 0 1 0-1h15a.5.5 0 0 1 0 1z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="menumobile"
+            aria-labelledby="menumobileLabel"
+            aria-modal="true"
+            role="dialog"
+          >
+            <div class="offcanvas-body">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+
+              <nav class="nav-mobile">
+                <ul class="nav-list">
+                  <li class="position-relative">
+                    <a href="#" class="nav-item">Trang chủ</a>
+                  </li>
+                  <li class="position-relative">
+                    <a href="#" class="nav-item">Giới thiệu</a>
+                  </li>
+                  <li class="position-relative">
+                    <a href="#" class="nav-item">Sản phẩm</a>
+                  </li>
+                  <li class="position-relative">
+                    <a href="#" class="nav-item">Tin Tức</a>
+                  </li>
+                  <li class="position-relative">
+                    <a href="#" class="nav-item">Liên Hệ</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header-search">
+                <form action="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M12.755 13.2941L12.649 13.4002C11.7468 12.4985 10.845 11.5967 9.94385 10.6939L12.9128 13.4355C12.8573 13.3972 12.8084 13.3479 12.7604 13.2995L12.755 13.2941ZM12.755 13.2941L12.6485 13.3997C12.6511 13.4024 12.6538 13.405 12.6564 13.4077C12.7024 13.4541 12.7602 13.5124 12.8274 13.5589L12.8278 13.5592C13.0345 13.7012 13.3128 13.6722 13.4887 13.5037L13.4888 13.5036C13.6716 13.3283 13.705 13.0386 13.5579 12.8251L13.5578 12.8249C13.5137 12.7612 13.4581 12.7055 13.4142 12.6616C13.4091 12.6565 13.4041 12.6515 13.3994 12.6467L13.3991 12.6464C13.3015 12.5488 13.2039 12.4511 13.1064 12.3535C12.4276 11.6742 11.7489 10.995 11.0691 10.3165C10.9519 10.1995 10.8316 10.0839 10.7105 9.96758C10.6876 9.94552 10.6646 9.92344 10.6416 9.90131M12.755 13.2941L10.6416 9.90131M10.6416 9.90131C12.6772 7.41663 12.3291 3.95458 10.1476 1.91193C7.96045 -0.136037 4.55386 -0.176885 2.29415 1.82965L2.29414 1.82965C0.0550959 3.81793 -0.300732 7.21289 1.49159 9.62851L10.6416 9.90131ZM1.41065 6.15026C1.41685 3.53305 3.56417 1.40109 6.18952 1.40764C8.81235 1.41418 10.9346 3.55113 10.9304 6.18343C10.9263 8.81478 8.79924 10.934 6.16524 10.9302H6.16503H6.16489C3.53023 10.9264 1.40479 8.79008 1.41065 6.15026ZM1.41065 6.15026L1.26065 6.14991L1.41065 6.15026Z"
+                      fill="black"
+                      stroke="black"
+                      stroke-width="0.3"
+                    />
+                  </svg>
+                  <input
+                    id="input-search"
+                    class=""
+                    type="seach"
+                    placeholder="Search"
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <section id="fhm-breadcrumb" class="breadcrumb">
+      <div class="container">
+        <div class="breadcrumb-list">
+          <a href="#" title="Trang chủ" class="breadcrumb-link">Trang chủ</a>
+          <div class="breadcrumb-arrow">
+            <svg
+              width="5"
+              height="9"
+              viewBox="0 0 5 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.64526 4.4992C3.58546 4.44884 3.54769 4.42051 3.51307 4.38589C2.39577 3.26859 1.27532 2.15129 0.161169 1.03084C0.0919282 0.961601 0.0352768 0.867182 0.0100982 0.772762C-0.0308171 0.627985 0.0573075 0.470618 0.189495 0.395082C0.321683 0.319547 0.488491 0.328988 0.611237 0.426556C0.649004 0.454882 0.680478 0.489502 0.715099 0.524123C1.92997 1.73899 3.14483 2.95386 4.36285 4.16873C4.5989 4.40478 4.5989 4.59361 4.366 4.82652C3.13854 6.05397 1.91108 7.27828 0.686773 8.50574C0.570322 8.62219 0.441282 8.68829 0.274473 8.63793C0.0195399 8.56239 -0.0780273 8.26025 0.0824863 8.04938C0.110812 8.01161 0.145433 7.98014 0.180054 7.94552C1.29421 6.83136 2.41151 5.71406 3.52566 4.59991C3.55399 4.56844 3.59175 4.54326 3.64526 4.4992Z"
+                fill="#616161"
+              ></path>
+            </svg>
+          </div>
+          <a href="#" title="Sản phẩm" class="breadcrumb-link">Sản phẩm</a>
+          <div class="breadcrumb-arrow">
+            <svg
+              width="5"
+              height="9"
+              viewBox="0 0 5 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.64526 4.4992C3.58546 4.44884 3.54769 4.42051 3.51307 4.38589C2.39577 3.26859 1.27532 2.15129 0.161169 1.03084C0.0919282 0.961601 0.0352768 0.867182 0.0100982 0.772762C-0.0308171 0.627985 0.0573075 0.470618 0.189495 0.395082C0.321683 0.319547 0.488491 0.328988 0.611237 0.426556C0.649004 0.454882 0.680478 0.489502 0.715099 0.524123C1.92997 1.73899 3.14483 2.95386 4.36285 4.16873C4.5989 4.40478 4.5989 4.59361 4.366 4.82652C3.13854 6.05397 1.91108 7.27828 0.686773 8.50574C0.570322 8.62219 0.441282 8.68829 0.274473 8.63793C0.0195399 8.56239 -0.0780273 8.26025 0.0824863 8.04938C0.110812 8.01161 0.145433 7.98014 0.180054 7.94552C1.29421 6.83136 2.41151 5.71406 3.52566 4.59991C3.55399 4.56844 3.59175 4.54326 3.64526 4.4992Z"
+                fill="#616161"
+              ></path>
+            </svg>
+          </div>
+          <a href="#" title="Tã dán nami" class="breadcrumb-link"
+            >Tã dán nami</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT DETAIL -->
+    <main>
+      <!-- PROFUCT INFO  -->
+      <section id="fhm-product-info">
+        <img class="bg-box" src="./image/bg-product-info.png" alt="" />
+        <div class="container">
+          <h3 class="title-box wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1s">TÃ DÁN NAMI</h3>
+          <div class="product-info-img wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s">
+            <div>
+              <img src="./image/product-info1.png" alt="" />
+            </div>
+            <div>
+              <img src="./image/product-info2.png" alt="" />
+            </div>
+            <div>
+              <img src="./image/product-info3.png" alt="" />
+            </div>
+          </div>
+          <div class="product-info wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">
+            <ul class="tabs-list d-flex align-items-center" role="tablist">
+              <li
+                class="tabs-item active"
+                data-content="product-information"
+                role="presentation"
+              >
+                <p
+                  class="text active"
+                  id="product-information-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#product-information"
+                  type="button"
+                  role="tab"
+                  aria-controls="product-information"
+                  aria-selected="false"
+                  tabindex="-1"
+                >
+                  Tã dán Nami tiện dụng
+                </p>
+              </li>
+              <li
+                class="tabs-item"
+                data-content="product-using"
+                role="presentation"
+              >
+                <p
+                  class="text"
+                  id="product-using-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#product-using"
+                  type="button"
+                  role="tab"
+                  aria-controls="product-using"
+                  aria-selected="false"
+                  tabindex="-1"
+                >
+                  Cách chọn size tã cho bé
+                </p>
+              </li>
+            </ul>
+            <div class="tab-content tabs-content" id="tabs-content">
+              <div
+                class="tab-pane fade active show"
+                id="product-information"
+                role="tabpanel"
+                aria-labelledby="product-information-tab"
+              >
+                <p>
+                  Có rất nhiều biến thể của Lorem Ipsum mà bạn có thể tìm thấy,
+                  nhưng đa số được biến đổi bằng cách thêm các yếu tố hài hước,
+                  các từ ngẫu nhiên có khi không có vẻ gì là có ý nghĩa. Nếu bạn
+                  định sử dụng một đoạn Lorem Ipsum, bạn nên kiểm tra kĩ để chắn
+                  chắn là không có gì nhạy cảm được giấu ở giữa đoạn văn bản.
+                  Tất cả các công cụ sản xuất văn bản mẫu Lorem Ipsum đều được
+                  làm theo cách lặp đi lặp lại các đoạn chữ cho tới đủ thì thôi,
+                  khiến cho lipsum.com trở thành công cụ sản xuất. Nếu bạn định
+                  sử dụng một đoạn Lorem Ipsum, bạn nên kiểm tra kĩ để chắn chắn
+                  là không có gì nhạy cảm được giấu ở giữa đoạn văn bản. Tất cả
+                  các công cụ sản xuất văn bản mẫu Lorem Ipsum đều được làm theo
+                  cách lặp đi lặp lại các đoạn chữ cho tới đủ thì thôi, khiến
+                  cho lipsum.com trở thành công cụ sản xuất Lorem Ipsum đáng giá
+                  nhất trên mạng. Trang web này sử dụng hơn 200 từ la-tinh, kết
+                  hợp thuần thục nhiều cấu trúc câu để tạo ra văn bản Lorem
+                  Ipsum trông có vẻ thật sự hợp lí. Nhờ thế, văn bản Lorem Ipsum
+                  được tạo ra mà không cần một sự lặp lại nào, cũng không cần
+                  chèn thêm các từ ngữ hóm hỉnh hay thiếu trật tự. đoạn từ kí tự
+                  danh sách Bắt đầu bằng "Lorem ipsum dolor sit amet..."
+                </p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="product-using"
+                role="tabpanel"
+                aria-labelledby="product-using-tab"
+              >
+                <p>
+                  Có rất nhiều biến thể của Lorem Ipsum mà bạn có thể tìm thấy,
+                  nhưng đa số được biến đổi bằng cách thêm các yếu tố hài hước,
+                  các từ ngẫu nhiên có khi không có vẻ gì là có ý nghĩa. Nếu bạn
+                  định sử dụng một đoạn Lorem Ipsum, bạn nên kiểm tra kĩ để chắn
+                  chắn là không có gì nhạy cảm được giấu ở giữa đoạn văn bản.
+                  Tất cả các công cụ sản xuất văn bản mẫu Lorem Ipsum đều được
+                  làm theo cách lặp đi lặp lại các đoạn chữ cho tới đủ thì thôi,
+                  khiến cho lipsum.com trở thành công cụ sản xuất. Nếu bạn định
+                  sử dụng một đoạn Lorem Ipsum, bạn nên kiểm tra kĩ để chắn chắn
+                  là không có gì nhạy cảm được giấu ở giữa đoạn văn bản. Tất cả
+                  các công cụ sản xuất văn bản mẫu Lorem Ipsum đều được làm theo
+                  cách lặp đi lặp lại các đoạn chữ cho tới đủ thì thôi, khiến
+                  cho lipsum.com trở thành công cụ sản xuất Lorem Ipsum đáng giá
+                  nhất trên mạng. Trang web này sử dụng hơn 200 từ la-tinh, kết
+                  hợp thuần thục nhiều cấu trúc câu để tạo ra văn bản Lorem
+                  Ipsum trông có vẻ thật sự hợp lí. Nhờ thế, văn bản Lorem Ipsum
+                  được tạo ra mà không cần một sự lặp lại nào, cũng không cần
+                  chèn thêm các từ ngữ hóm hỉnh hay thiếu trật tự. đoạn từ kí tự
+                  danh sách Bắt đầu bằng "Lorem ipsum dolor sit amet..."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCT IMAGE  -->
+      <section id="fhm-product-img">
+        <div class="container">
+          <h5 class="title-box-item wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1s">Hình ảnh sản phẩm</h5>
+          <div class="product-img d-flex wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1s">
+            <div class="product-img-left justify-content-between">
+              <div class="item-product-left">
+                <img
+                  src="./image/product-img1.png"
+                  alt="product image"
+                  onclick="clickProductImg(this)"
+                />
+              </div>
+              <div class="item-product-left">
+                <img
+                  src="./image/product-img2.png"
+                  alt="product image"
+                  onclick="clickProductImg(this)"
+                />
+              </div>
+              <div class="item-product-left">
+                <img
+                  src="./image/product-img3.png"
+                  alt="product image"
+                  onclick="clickProductImg(this)"
+                />
+              </div>
+              <div class="item-product-left">
+                <img
+                  src="./image/product-img4.png"
+                  alt="product image"
+                  onclick="clickProductImg(this)"
+                />
+              </div>
+              <div class="item-product-left">
+                <img
+                  src="./image/product-img1.png"
+                  alt="product image"
+                  onclick="clickProductImg(this)"
+                />
+              </div>
+              <div class="item-product-left">
+                <img
+                  src="./image/product-img2.png"
+                  alt="product image"
+                  onclick="clickProductImg(this)"
+                />
+              </div>
+            </div>
+            <div class="product-img-right">
+              <img
+                id="imageBoxProductImg"
+                src="./image/product-img4.png"
+                alt="product-img image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- USER MANUAL  -->
+      <section id="fhm-user-manual" class="user-manual">
+        <div class="container">
+          <div class="user-manual-container">
+            <div class="user-manual-img wow bounceInLeft" data-wow-delay=".3s" data-wow-duration="2s">
+              <img src="./image/user-manual-img1.png" alt="" />
+            </div>
+            <div class="user-manual-content wow bounceInRight" data-wow-delay=".5s" data-wow-duration="2s">
+              <h5 class="title-box-item">
+                Hướng dẫn sử dụng tã bỉm Huggies đúng cách cho bé
+              </h5>
+              <ul>
+                <li>
+                  Bước 1: Đặt bé nằm ngửa và nhẹ nhàng nhấc hai chân bé lên để
+                  tháo tã cũ ra và lau sạch chất thải còn dính trên da bé"
+                </li>
+                <li>
+                  Bước 2: Để chân bé đá vào không khí khô và ấm là cách tốt để
+                  giảm phát ban tã. Mở tã và trượt ngón tay xuống hai bên để
+                  nâng các nếp gấp chống tràn lên.
+                </li>
+                <li>
+                  Bước 3: Nhấc chân bé lên, đặt tã sạch bên dưới (với các tai
+                  dán ở phía sau), sau đó cho bé nằm xuống. Lõi thấm hút chất
+                  lỏng nên tiếp xúc trực tiếp với da bé, cạnh trên của tã nên
+                  được đặt ở vị trí giữa lưng bé.
+                </li>
+                <li>
+                  Bước 4: Đặt mặt trước tã giữa hai chân bé và trải rộng tã ra
+                  khắp bụng.
+                </li>
+                <li>
+                  Bước 5: Một tay nhẹ nhàng giữ tã trên người bé, tay kia mở tai
+                  dán và dán lên mặt trước tã.
+                </li>
+                <li>
+                  Bước 6: Cố định các tai dán tã vừa vặn với cơ thể bé. Kiểm tra
+                  lại xem tã có quá chật hoặc quá rộng không.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PACK PRODUCT  -->
+      <section id="fhm-pack" class="pack">
+        <div class="container">
+          <div class="pack-container">
+            <div class="pack-info wow bounceInLeft" data-wow-delay=".3s" data-wow-duration="2s">
+              <h5 class="title-box-item">Nami baby diapers 6 bịch/1 thùng</h5>
+              <p>
+                Có rất nhiều biến thể của Lorem Ipsum mà bạn có thể tìm thấy,
+                nhưng đa số được biến đổi bằng cách thêm các yếu tố hài hước,
+                các từ ngẫu nhiên có khi không có vẻ gì là có ý nghĩa. Nếu bạn
+                định sử dụng một đoạn Lorem Ipsum, bạn nên kiểm tra kĩ để chắn
+                chắn là không có gì nhạy cảm được giấu ở giữa đoạn văn bản
+              </p>
+            </div>
+            <div class="pack-img wow bounceInRight" data-wow-delay=".5s" data-wow-duration="2s">
+              <img src="./image/pack-img.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="product-detail-img wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s"  style="margin-top: 150px">
+        <div class="container">
+          <img src="./image/product-detail2.png" alt="" />
+        </div>
+      </div>
+
+      <!-- LOCATION AND PRICE  -->
+      <section id="fhm-location-price" class="location-price">
+        <div class="container">
+          <h5 class="title-box-item wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">
+            Hướng dẫn mua tã bỉm NAMI và giá sản phẩm
+          </h5>
+          <div class="location-price-container">
+            <div class="item wow bounceInLeft" data-wow-delay=".5s" data-wow-duration="2s">
+              <span>Địa điểm mua Tã bỉm NAMI</span>
+              <p>
+                Mẹ có thể dễ dàng đặt mua tã dán, tã quần giá tốt của Nami thông
+                qua các trang thương mại điện tử như Lazada, Shopee, Tiki và đại
+                lý phân phối chính hãng. Các chương trình khuyến mãi trong từng
+                thời điểm có thể làm giá tã bỉm Nami chênh lệch nhẹ.
+              </p>
+            </div>
+            <div class="item wow bounceInRight" data-wow-delay=".5s" data-wow-duration="2s">
+              <span>Giá sản phẩm</span>
+              <p>
+                Mẹ có thể dễ dàng đặt mua tã dán, tã quần giá tốt của Nami thông
+                qua các trang thương mại điện tử như Lazada, Shopee, Tiki và đại
+                lý phân phối chính hãng. Các chương trình khuyến mãi trong từng
+                thời điểm có thể làm giá tã bỉm Nami chênh lệch nhẹ.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RELATED PRODUCTS  -->
+      <section id="fhm-related-product" class="related-product">
+        <div class="container">
+          <h5 class="title-box-item wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">
+            Hướng dẫn mua tã bỉm NAMI và giá sản phẩm
+          </h5>
+          <div class="related-product-container d-flex justify-content-center product-list">
+            <div class="product-item wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1s">
+              <div class="product-img">
+                <img src="./image/product1.png" alt="" />
+              </div>
+              <div class="product-content">
+                <span>Tã dán Nami êm mềm tiện dụng</span>
+                <p>
+                  chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình
+                  bày và dàn trang phục vụ cho in ấn. ngành công nghiệp in ấn.
+                </p>
+                <button class="button-w">Xem chi tiết</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER  -->
+    <footer>
+      <div class="container">
+        <div class="footer-logo">
+          <img src="./image/logo-footer.png" alt="" />
+        </div>
+        <div class="footer-main d-flex justify-content-between">
+          <div class="footer-col">
+            <h4>CÔNG TY TNHH THƯƠNG MẠI NAMI ONE VIỆT NAM</h4>
+            <ul>
+              <li>
+                <span>Địa chỉ:</span>
+                <a
+                  href="/"
+                  title="Số 16C, ngõ 207 Bùi Xương Trạch, Phường Khương Đình, Quận Thanh Xuân, thành phố Hà Nội, Việt Nam."
+                  >Số 16C, ngõ 207 Bùi Xương Trạch, Phường Khương Đình, Quận
+                  Thanh Xuân, thành phố Hà Nội, Việt Nam.</a
+                >
+              </li>
+              <li>
+                <span>Điện thoại:</span>
+                <a href="/" title="092 981 8123">092 981 8123</a>
+              </li>
+              <li>
+                <span>Email:</span>
+                <a href="/" title="namivietnam8386@gmail.com"
+                  >namivietnam8386@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <ul>
+              <li><a href="/" title="Trang chủ">Trang chủ</a></li>
+              <li><a href="/" title="Giới thiệu  ">Giới thiệu </a></li>
+              <li><a href="/" title="Sản phẩm">Sản phẩm</a></li>
+              <li><a href="/" title="Tin Tức">Tin Tức </a></li>
+              <li><a href="/" title="Liên Hệ">Liên Hệ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>Follow Us on</h5>
+            <div class="footer-social d-flex">
+              <a href="/" title="Facebook">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="38"
+                  height="38"
+                  viewBox="0 0 38 38"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_43_5681)">
+                    <path
+                      d="M38 19.1155C38 8.62206 29.4934 0.115479 19 0.115479C8.50658 0.115479 0 8.62206 0 19.1155C0 28.5989 6.94806 36.4593 16.0312 37.8847V24.6077H11.207V19.1155H16.0312V14.9295C16.0312 10.1677 18.8678 7.53735 23.2078 7.53735C25.2866 7.53735 27.4609 7.90845 27.4609 7.90845V12.5842H25.0651C22.7049 12.5842 21.9688 14.0488 21.9688 15.5513V19.1155H27.2383L26.3959 24.6077H21.9688V37.8847C31.052 36.4593 38 28.5989 38 19.1155Z"
+                      fill="#989898"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_43_5681">
+                      <rect width="38" height="38" fill="white"></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="/" title="Twitter" alt="Twitter">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="38"
+                  height="38"
+                  viewBox="0 0 38 38"
+                  fill="none"
+                >
+                  <path
+                    d="M19.0008 0C8.50694 0 0 8.50849 0 19.0008C0 29.4946 8.50694 38 19.0008 38C29.4946 38 38 29.4946 38 19.0008C38 8.50849 29.4938 0 19.0008 0ZM28.5718 15.1698C28.5818 15.375 28.5856 15.581 28.5856 15.7894C28.5856 22.1173 23.7693 29.4128 14.9622 29.4128C12.2585 29.4128 9.74074 28.6204 7.62191 27.2623C7.99691 27.3063 8.37731 27.3287 8.76389 27.3287C11.0077 27.3287 13.0725 26.5633 14.7106 25.2793C12.6157 25.24 10.848 23.8549 10.2384 21.9529C10.5301 22.01 10.8302 22.0386 11.1389 22.0386C11.5756 22.0386 11.9985 21.9815 12.4005 21.8711C10.2091 21.4313 8.55864 19.4946 8.55864 17.1767C8.55864 17.1559 8.55864 17.1358 8.55941 17.115C9.20448 17.4738 9.9429 17.689 10.7284 17.7145C9.4429 16.8542 8.59799 15.3904 8.59799 13.7284C8.59799 12.8511 8.8341 12.0278 9.24614 11.321C11.608 14.2176 15.1366 16.1242 19.1165 16.3233C19.0347 15.9738 18.9923 15.6073 18.9923 15.2323C18.9923 12.5887 21.1358 10.4444 23.7809 10.4444C25.1582 10.4444 26.402 11.0262 27.2755 11.956C28.3665 11.7423 29.3912 11.3426 30.3164 10.794C29.9576 11.9128 29.1991 12.8511 28.2099 13.4429C29.1798 13.3272 30.1026 13.0694 30.9606 12.689C30.3202 13.6512 29.5077 14.4946 28.5718 15.1698Z"
+                    fill="#989898"
+                  ></path>
+                </svg>
+              </a>
+
+              <a href="/" title="Instagram">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="38"
+                  height="38"
+                  viewBox="0 0 38 38"
+                  fill="none"
+                >
+                  <path
+                    d="M18.8453 22.5525C20.7222 22.5525 22.2437 21.031 22.2437 19.1542C22.2437 17.2773 20.7222 15.7559 18.8453 15.7559C16.9685 15.7559 15.447 17.2773 15.447 19.1542C15.447 21.031 16.9685 22.5525 18.8453 22.5525Z"
+                    fill="#989898"
+                  ></path>
+                  <path
+                    d="M23.0932 10.8127H14.5973C13.3616 10.8127 12.2803 11.1989 11.5852 11.894C10.8901 12.5891 10.5039 13.6704 10.5039 14.9062V23.402C10.5039 24.6378 10.8901 25.719 11.6624 26.4914C12.4348 27.1865 13.4388 27.5727 14.6746 27.5727H23.0932C24.3289 27.5727 25.4102 27.1865 26.1053 26.4914C26.8777 25.7963 27.2638 24.715 27.2638 23.4792V14.9834C27.2638 13.7477 26.8777 12.7436 26.1826 11.9713C25.4102 11.1989 24.4062 10.8127 23.0932 10.8127ZM18.8453 24.4061C15.9103 24.4061 13.5933 22.0118 13.5933 19.1541C13.5933 16.2192 15.9876 13.9021 18.8453 13.9021C21.7029 13.9021 24.1745 16.2192 24.1745 19.1541C24.1745 22.089 21.7802 24.4061 18.8453 24.4061ZM24.3289 14.9062C23.6338 14.9062 23.0932 14.3655 23.0932 13.6704C23.0932 12.9753 23.6338 12.4347 24.3289 12.4347C25.024 12.4347 25.5647 12.9753 25.5647 13.6704C25.5647 14.3655 25.024 14.9062 24.3289 14.9062Z"
+                    fill="#989898"
+                  ></path>
+                  <path
+                    d="M18.9997 0C8.49582 0 0 8.49582 0 18.9997C0 29.5037 8.49582 37.9995 18.9997 37.9995C29.5037 37.9995 37.9995 29.5037 37.9995 18.9997C38.0767 8.49582 29.5037 0 18.9997 0ZM29.1175 23.4794C29.1175 25.2558 28.4996 26.8004 27.4183 27.8817C26.337 28.963 24.7923 29.5037 23.0932 29.5037H14.6746C12.9754 29.5037 11.4307 28.963 10.3495 27.8817C9.19093 26.8004 8.65029 25.2558 8.65029 23.4794V14.9835C8.65029 11.4307 11.0446 8.95923 14.6746 8.95923H23.1704C24.9468 8.95923 26.4143 9.5771 27.4956 10.6584C28.5768 11.7397 29.1175 13.2071 29.1175 14.9835V23.4794Z"
+                    fill="#989898"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      new WOW().init();
+    </script>
+    <script src="./bootstrap/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./wow/wow.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

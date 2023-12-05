@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./wow/animate.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <title>GoldGi</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header id="fhm-header" class="header">
+      <div class="container">
+        <div class="header-container d-flex justify-content-between">
+          <div class="header-logo">
+            <a href="">
+              <img src="./image/logo.png" alt="" />
+            </a>
+          </div>
+          <div class="header-main">
+            <div class="header-menu">
+              <ul>
+                <li><a href="">Trang chủ</a></li>
+                <li><a href="">Giới thiệu</a></li>
+                <li><a href=""> Sản phẩm</a></li>
+                <li><a href=""> Tin Tức</a></li>
+                <li><a href="">Liên Hệ</a></li>
+              </ul>
+            </div>
+            <div class="header-search">
+              <form action="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                >
+                  <path
+                    d="M12.755 13.2941L12.649 13.4002C11.7468 12.4985 10.845 11.5967 9.94385 10.6939L12.9128 13.4355C12.8573 13.3972 12.8084 13.3479 12.7604 13.2995L12.755 13.2941ZM12.755 13.2941L12.6485 13.3997C12.6511 13.4024 12.6538 13.405 12.6564 13.4077C12.7024 13.4541 12.7602 13.5124 12.8274 13.5589L12.8278 13.5592C13.0345 13.7012 13.3128 13.6722 13.4887 13.5037L13.4888 13.5036C13.6716 13.3283 13.705 13.0386 13.5579 12.8251L13.5578 12.8249C13.5137 12.7612 13.4581 12.7055 13.4142 12.6616C13.4091 12.6565 13.4041 12.6515 13.3994 12.6467L13.3991 12.6464C13.3015 12.5488 13.2039 12.4511 13.1064 12.3535C12.4276 11.6742 11.7489 10.995 11.0691 10.3165C10.9519 10.1995 10.8316 10.0839 10.7105 9.96758C10.6876 9.94552 10.6646 9.92344 10.6416 9.90131M12.755 13.2941L10.6416 9.90131M10.6416 9.90131C12.6772 7.41663 12.3291 3.95458 10.1476 1.91193C7.96045 -0.136037 4.55386 -0.176885 2.29415 1.82965L2.29414 1.82965C0.0550959 3.81793 -0.300732 7.21289 1.49159 9.62851L10.6416 9.90131ZM1.41065 6.15026C1.41685 3.53305 3.56417 1.40109 6.18952 1.40764C8.81235 1.41418 10.9346 3.55113 10.9304 6.18343C10.9263 8.81478 8.79924 10.934 6.16524 10.9302H6.16503H6.16489C3.53023 10.9264 1.40479 8.79008 1.41065 6.15026ZM1.41065 6.15026L1.26065 6.14991L1.41065 6.15026Z"
+                    fill="black"
+                    stroke="black"
+                    stroke-width="0.3"
+                  />
+                </svg>
+                <input
+                  id="input-search"
+                  class=""
+                  type="seach"
+                  placeholder="Search"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="d-lg-none d-block d-flex">
+            <div
+              class="show-menu-mobile d-block d-xl-none d-lg-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#menumobile"
+              aria-controls="menumobile"
+            >
+              <svg
+                height="24"
+                viewBox="0 0 16 16"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="_31" data-name="31">
+                  <path
+                    d="m15.5 4h-15a.5.5 0 0 1 0-1h15a.5.5 0 0 1 0 1z"
+                  ></path>
+                  <path
+                    d="m15.5 9h-15a.5.5 0 0 1 0-1h15a.5.5 0 0 1 0 1z"
+                  ></path>
+                  <path
+                    d="m15.5 14h-15a.5.5 0 0 1 0-1h15a.5.5 0 0 1 0 1z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="menumobile"
+            aria-labelledby="menumobileLabel"
+            aria-modal="true"
+            role="dialog"
+          >
+            <div class="offcanvas-body">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+
+              <nav class="nav-mobile">
+                <ul class="nav-list">
+                  <li class="position-relative">
+                    <a href="#" class="nav-item">Trang chủ</a>
+                  </li>
+                  <li class="position-relative">
+                    <a href="#" class="nav-item">Giới thiệu</a>
+                  </li>
+                  <li class="position-relative">
+                    <a href="#" class="nav-item">Sản phẩm</a>
+                  </li>
+                  <li class="position-relative">
+                    <a href="#" class="nav-item">Tin Tức</a>
+                  </li>
+                  <li class="position-relative">
+                    <a href="#" class="nav-item">Liên Hệ</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header-search">
+                <form action="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M12.755 13.2941L12.649 13.4002C11.7468 12.4985 10.845 11.5967 9.94385 10.6939L12.9128 13.4355C12.8573 13.3972 12.8084 13.3479 12.7604 13.2995L12.755 13.2941ZM12.755 13.2941L12.6485 13.3997C12.6511 13.4024 12.6538 13.405 12.6564 13.4077C12.7024 13.4541 12.7602 13.5124 12.8274 13.5589L12.8278 13.5592C13.0345 13.7012 13.3128 13.6722 13.4887 13.5037L13.4888 13.5036C13.6716 13.3283 13.705 13.0386 13.5579 12.8251L13.5578 12.8249C13.5137 12.7612 13.4581 12.7055 13.4142 12.6616C13.4091 12.6565 13.4041 12.6515 13.3994 12.6467L13.3991 12.6464C13.3015 12.5488 13.2039 12.4511 13.1064 12.3535C12.4276 11.6742 11.7489 10.995 11.0691 10.3165C10.9519 10.1995 10.8316 10.0839 10.7105 9.96758C10.6876 9.94552 10.6646 9.92344 10.6416 9.90131M12.755 13.2941L10.6416 9.90131M10.6416 9.90131C12.6772 7.41663 12.3291 3.95458 10.1476 1.91193C7.96045 -0.136037 4.55386 -0.176885 2.29415 1.82965L2.29414 1.82965C0.0550959 3.81793 -0.300732 7.21289 1.49159 9.62851L10.6416 9.90131ZM1.41065 6.15026C1.41685 3.53305 3.56417 1.40109 6.18952 1.40764C8.81235 1.41418 10.9346 3.55113 10.9304 6.18343C10.9263 8.81478 8.79924 10.934 6.16524 10.9302H6.16503H6.16489C3.53023 10.9264 1.40479 8.79008 1.41065 6.15026ZM1.41065 6.15026L1.26065 6.14991L1.41065 6.15026Z"
+                      fill="black"
+                      stroke="black"
+                      stroke-width="0.3"
+                    />
+                  </svg>
+                  <input
+                    id="input-search"
+                    class=""
+                    type="seach"
+                    placeholder="Search"
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- BANNER -->
+    <section
+      id="fhm-about-us-banner"
+      class="about-us-banner banner-detail-page"
+    >
+      <div class="banner-img">
+        <img src="./image/news-bg.png" alt="" />
+      </div>
+    </section>
+
+    <!-- BREADCRUMB -->
+    <section id="fhm-breadcrumb-detail" class="breadcrumb breadcrumb-detail">
+      <div class="container">
+        <div class="breadcrumb-list">
+          <a href="#" title="Trang chủ" class="breadcrumb-link">Trang chủ</a>
+          <div class="breadcrumb-arrow">
+            <svg
+              width="5"
+              height="9"
+              viewBox="0 0 5 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.64526 4.4992C3.58546 4.44884 3.54769 4.42051 3.51307 4.38589C2.39577 3.26859 1.27532 2.15129 0.161169 1.03084C0.0919282 0.961601 0.0352768 0.867182 0.0100982 0.772762C-0.0308171 0.627985 0.0573075 0.470618 0.189495 0.395082C0.321683 0.319547 0.488491 0.328988 0.611237 0.426556C0.649004 0.454882 0.680478 0.489502 0.715099 0.524123C1.92997 1.73899 3.14483 2.95386 4.36285 4.16873C4.5989 4.40478 4.5989 4.59361 4.366 4.82652C3.13854 6.05397 1.91108 7.27828 0.686773 8.50574C0.570322 8.62219 0.441282 8.68829 0.274473 8.63793C0.0195399 8.56239 -0.0780273 8.26025 0.0824863 8.04938C0.110812 8.01161 0.145433 7.98014 0.180054 7.94552C1.29421 6.83136 2.41151 5.71406 3.52566 4.59991C3.55399 4.56844 3.59175 4.54326 3.64526 4.4992Z"
+                fill="#616161"
+              ></path>
+            </svg>
+          </div>
+          <a href="#" title="Tin tức" class="breadcrumb-link">Tin tức</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG DETAIL -->
+    <section id="fhm-blog-detail" class="blog-detail">
+      <div class="container">
+        <div class="blog-detail-container">
+            <div class="blog-detail-right wow bounceInLeft" data-wow-delay="0.7s" data-wow-duration="3s">
+                <h5 class="title-box-item">Bài viết liên quan</h5>
+                <div class="blog-detail-right-container">
+                  <div class="blog-item">
+                    <div class="blog-img">
+                      <a href="">
+                        <img src="./image/blog2.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="blog-info">
+                      <p class="blog-time">Nov 15, 2023</p>
+                      <a href="" class="blog-name">
+                        Miếng dán với chất liệu mềm mại, dán nhiều lần mà vẫn thoải
+                        mái cho bé.
+                      </a>
+                    </div>
+                  </div>
+                  <div class="blog-item">
+                    <div class="blog-img">
+                      <a href="">
+                        <img src="./image/blog2.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="blog-info">
+                      <p class="blog-time">Nov 15, 2023</p>
+                      <a href="" class="blog-name">
+                        Miếng dán với chất liệu mềm mại, dán nhiều lần mà vẫn thoải
+                        mái cho bé.
+                      </a>
+                    </div>
+                  </div>
+                  <div class="blog-item">
+                    <div class="blog-img">
+                      <a href="">
+                        <img src="./image/blog2.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="blog-info">
+                      <p class="blog-time">Nov 15, 2023</p>
+                      <a href="" class="blog-name">
+                        Miếng dán với chất liệu mềm mại, dán nhiều lần mà vẫn thoải
+                        mái cho bé.
+                      </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <div class="blog-detail-left wow bounceInRight" data-wow-delay="0.7s" data-wow-duration="3s">
+            <h3 class="title-box">Cách tắm cho trẻ sơ sinh chưa rụng rốn và đã rụng rốn đúng chuẩn</h3>
+            <div class="blog-detail-info">
+                <span>SEP 25.2022</span>
+            </div>
+            <div class="blog-detail-left-container">
+              <p>
+                Ở hầu hết các bệnh viện phụ sản, hộ lý và y tá sẽ là người đảm đương việc tắm cho trẻ sơ sinh lần đầu tiên sau khi sinh. Tuy nhiên, khi về đến nhà, mẹ sẽ bắt đầu phải tự tắm cho bé. Việc tắm trẻ sơ sinh chưa rụng rốn không hề dễ dàng đối với các bà mẹ, đặc biệt với những mẹ chưa có kinh nghiệm. Qua bài viết dưới đây, Nami Việt Nam sẽ mách mẹ những mẹo tắm cho bé chưa rụng rốn đơn giản nhất!
+              </p>
+              <p>
+                Khi nào có thể bắt đầu tắm cho trẻ sơ sinh? <br> Thường sau khi mẹ sinh con ở bệnh viện, các nhân viên hộ lý sẽ chỉ lau sạch nước ối và máu còn dính trên người bé rồi đưa bế đến bên mẹ. Lúc này thân nhiệt của bé vẫn chưa ổn định, nên việc tắm sẽ cần đợi đến ngày hôm sau. Tuy nhiên, nhiều bác sĩ nhi khoa quốc tế vẫn thường khuyên các bà mẹ nên đợi khi trẻ sơ sinh được vài ngày tuổi rồi hẵng bắt đầu tắm cho con, vì da trẻ sau khi sinh sẽ được bao phủ bởi một lớp sáp mỏng (vernix) giúp bảo vệ trẻ khỏi sự tấn công từ vi khuẩn bên ngoài. Nếu muốn, mẹ có thể lưu ý với các cô hộ lý khi tắm để lại một chút lớp sáp này cho con. Sau khi đã đưa trẻ về nhà, mẹ có thể bắt đầu vệ sinh cho bé bằng cách lau các bộ phận như đầu, thân và bộ phận sinh dục bằng khăn mềm thấm nước ấm.
+              </p>
+              <p>
+                Vệ sinh cho trẻ mới rụng rốn nhưng chưa khô như thế nào? <br> Khi trẻ sơ sinh rụng rốn nhưng chưa khô, vùng rốn trẻ sơ sinh vẫn cần được tiếp tục chăm sóc, vệ sinh đúng cách bằng bông tiệt trùng tấm nhẹ với nước ấm pha một chút muối, hoặc dùng nước muối sinh lý 0,9%. Mẹ cần làm 3 - 4 lần/ngày để đảm bảo vệ sinh rốn cho bé. Sau đó dùng một miếng bông sạch khác thấm nước, vắt thật khô rồi thấm khô rốn cho bé.
+              </p>
+              <div class="blog-detail-left-container-img">
+                    <img src="./image/news1.png" alt="" />
+              </div>
+              <p class="outstand">
+                <span>Bí kíp cho mẹ</span>
+                Chuẩn bị tã bỉm cho con là một trong những việc mẹ bầu quan tâm nhất. NB đạt chất lượng 5 sao từ Viện nghiên cứu Đức an toàn cho da bé sơ sinh có bề mặt làm từ sợi thiên nhiên 100% nhập khẩu từ châu Âu, cùng vitamin E từ dầu mầm lúa mạch. Hơn nữa, sản phẩm còn sở hữu công nghệ siêu mỏng chỉ 5mm, bề mặt thấm hút nhanh, không chứa các hóa chất độc hại, đảm bảo tốt lành cho làn da bé.
+              </p>
+              <p>
+                Làm cách nào để vệ sinh da đầu và tóc trẻ sơ sinh chưa rụng rốn? <br> Mẹ nên làm sạch da đầu và tóc của bé 2 lần/tuần. Để làm sạch da đầu, tóc trẻ sơ sinh, mẹ hãy cho một ít sữa tắm em bé vào tay và mát xa vào tóc và da đầu con. Sau đó, mẹ tiếp tục làm sạch da đầu con bằng khăn sữa thấm nước ấm hoặc vốc nhẹ nước ấm lên da đầu.
+              </p>
+              <div
+                class="blog-detail-left-container-img two-img"
+              >
+                  <img src="./image/new2.png" alt="" />
+                  <img src="./image/new3.png" alt="" />
+              </div>
+            </div>
+            <div class="blog-detail-left-social">
+              <span>Share</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <g clip-path="url(#clip0_1_621)">
+                  <path d="M27.2212 13.6933C27.2212 6.17636 21.1275 0.0827026 13.6106 0.0827026C6.09366 0.0827026 0 6.17636 0 13.6933C0 20.4867 4.97722 26.1175 11.4839 27.1385V17.6276H8.02811V13.6933H11.4839V10.6947C11.4839 7.28355 13.5159 5.39933 16.6248 5.39933C18.114 5.39933 19.6715 5.66517 19.6715 5.66517V9.01464H17.9553C16.2645 9.01464 15.7372 10.0638 15.7372 11.1401V13.6933H19.512L18.9086 17.6276H15.7372V27.1385C22.244 26.1175 27.2212 20.4867 27.2212 13.6933Z" fill="#FFAE00"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_621">
+                    <rect width="27.2212" height="27.2212" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+                <path d="M14.5005 0C6.98332 0 0.889404 6.09502 0.889404 13.6111C0.889404 21.1283 6.98332 27.2212 14.5005 27.2212C22.0177 27.2212 28.1106 21.1283 28.1106 13.6111C28.1106 6.09502 22.0172 0 14.5005 0ZM21.3567 10.8668C21.3639 11.0138 21.3666 11.1614 21.3666 11.3106C21.3666 15.8436 17.9164 21.0698 11.6075 21.0698C9.67072 21.0698 7.86715 20.5021 6.34933 19.5293C6.61796 19.5608 6.89046 19.5768 7.16738 19.5768C8.77474 19.5768 10.2539 19.0285 11.4273 18.1087C9.92664 18.0806 8.66032 17.0884 8.22366 15.7259C8.4326 15.7668 8.64761 15.7873 8.8687 15.7873C9.18155 15.7873 9.48445 15.7463 9.77243 15.6673C8.20266 15.3522 7.02035 13.9649 7.02035 12.3045C7.02035 12.2895 7.02035 12.2752 7.02091 12.2602C7.483 12.5173 8.01196 12.6715 8.57465 12.6897C7.65379 12.0734 7.04854 11.0249 7.04854 9.83428C7.04854 9.20582 7.21768 8.61605 7.51284 8.10975C9.20477 10.1847 11.7324 11.5505 14.5834 11.6931C14.5249 11.4427 14.4945 11.1802 14.4945 10.9116C14.4945 9.01789 16.03 7.48184 17.9247 7.48184C18.9114 7.48184 19.8024 7.8986 20.4281 8.56465C21.2096 8.41154 21.9437 8.12522 22.6064 7.73223C22.3494 8.5337 21.806 9.20582 21.0974 9.62977C21.7922 9.54686 22.4533 9.36225 23.0679 9.08975C22.6092 9.77901 22.0271 10.3832 21.3567 10.8668Z" fill="#FFAE00"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path d="M14.2784 16.1554C15.6228 16.1554 16.7128 15.0655 16.7128 13.7211C16.7128 12.3766 15.6228 11.2867 14.2784 11.2867C12.9339 11.2867 11.844 12.3766 11.844 13.7211C11.844 15.0655 12.9339 16.1554 14.2784 16.1554Z" fill="#FFAE00"/>
+                <path d="M17.321 7.74573H11.2351C10.3498 7.74573 9.57525 8.02236 9.07731 8.5203C8.57937 9.01824 8.30273 9.79282 8.30273 10.678V16.764C8.30273 17.6492 8.57937 18.4238 9.13264 18.9771C9.6859 19.475 10.4052 19.7516 11.2904 19.7516H17.321C18.2062 19.7516 18.9808 19.475 19.4787 18.9771C20.032 18.4791 20.3086 17.7045 20.3086 16.8193V10.7334C20.3086 9.84815 20.032 9.1289 19.5341 8.57563C18.9808 8.02236 18.2616 7.74573 17.321 7.74573ZM14.278 17.4832C12.1756 17.4832 10.5158 15.7681 10.5158 13.721C10.5158 11.6186 12.2309 9.9588 14.278 9.9588C16.3251 9.9588 18.0956 11.6186 18.0956 13.721C18.0956 15.8234 16.3804 17.4832 14.278 17.4832ZM18.2062 10.678C17.7083 10.678 17.321 10.2908 17.321 9.79282C17.321 9.29488 17.7083 8.90759 18.2062 8.90759C18.7042 8.90759 19.0915 9.29488 19.0915 9.79282C19.0915 10.2908 18.7042 10.678 18.2062 10.678Z" fill="#FFAE00"/>
+                <path d="M14.3887 6.10352e-05C6.86427 6.10352e-05 0.77832 6.08601 0.77832 13.6105C0.77832 21.1349 6.86427 27.2208 14.3887 27.2208C21.9132 27.2208 27.9991 21.1349 27.9991 13.6105C28.0544 6.08601 21.9132 6.10352e-05 14.3887 6.10352e-05ZM21.6365 16.8194C21.6365 18.0919 21.1939 19.1985 20.4193 19.973C19.6448 20.7476 18.5382 21.1349 17.321 21.1349H11.2904C10.0732 21.1349 8.96669 20.7476 8.19211 19.973C7.36221 19.1985 6.97492 18.0919 6.97492 16.8194V10.7335C6.97492 8.18843 8.69005 6.41797 11.2904 6.41797H17.3764C18.6489 6.41797 19.7001 6.86058 20.4747 7.63516C21.2492 8.40973 21.6365 9.46094 21.6365 10.7335V16.8194Z" fill="#FFAE00"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER  -->
+    <footer>
+      <div class="container">
+        <div class="footer-logo">
+          <img src="./image/logo-footer.png" alt="" />
+        </div>
+        <div class="footer-main d-flex justify-content-between">
+          <div class="footer-col">
+            <h4>CÔNG TY TNHH THƯƠNG MẠI NAMI ONE VIỆT NAM</h4>
+            <ul>
+              <li>
+                <span>Địa chỉ:</span>
+                <a
+                  href="/"
+                  title="Số 16C, ngõ 207 Bùi Xương Trạch, Phường Khương Đình, Quận Thanh Xuân, thành phố Hà Nội, Việt Nam."
+                  >Số 16C, ngõ 207 Bùi Xương Trạch, Phường Khương Đình, Quận
+                  Thanh Xuân, thành phố Hà Nội, Việt Nam.</a
+                >
+              </li>
+              <li>
+                <span>Điện thoại:</span>
+                <a href="/" title="092 981 8123">092 981 8123</a>
+              </li>
+              <li>
+                <span>Email:</span>
+                <a href="/" title="namivietnam8386@gmail.com"
+                  >namivietnam8386@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <ul>
+              <li><a href="/" title="Trang chủ">Trang chủ</a></li>
+              <li><a href="/" title="Giới thiệu  ">Giới thiệu </a></li>
+              <li><a href="/" title="Sản phẩm">Sản phẩm</a></li>
+              <li><a href="/" title="Tin Tức">Tin Tức </a></li>
+              <li><a href="/" title="Liên Hệ">Liên Hệ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>Follow Us on</h5>
+            <div class="footer-social d-flex">
+              <a href="/" title="Facebook">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="38"
+                  height="38"
+                  viewBox="0 0 38 38"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_43_5681)">
+                    <path
+                      d="M38 19.1155C38 8.62206 29.4934 0.115479 19 0.115479C8.50658 0.115479 0 8.62206 0 19.1155C0 28.5989 6.94806 36.4593 16.0312 37.8847V24.6077H11.207V19.1155H16.0312V14.9295C16.0312 10.1677 18.8678 7.53735 23.2078 7.53735C25.2866 7.53735 27.4609 7.90845 27.4609 7.90845V12.5842H25.0651C22.7049 12.5842 21.9688 14.0488 21.9688 15.5513V19.1155H27.2383L26.3959 24.6077H21.9688V37.8847C31.052 36.4593 38 28.5989 38 19.1155Z"
+                      fill="#989898"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_43_5681">
+                      <rect width="38" height="38" fill="white"></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="/" title="Twitter" alt="Twitter">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="38"
+                  height="38"
+                  viewBox="0 0 38 38"
+                  fill="none"
+                >
+                  <path
+                    d="M19.0008 0C8.50694 0 0 8.50849 0 19.0008C0 29.4946 8.50694 38 19.0008 38C29.4946 38 38 29.4946 38 19.0008C38 8.50849 29.4938 0 19.0008 0ZM28.5718 15.1698C28.5818 15.375 28.5856 15.581 28.5856 15.7894C28.5856 22.1173 23.7693 29.4128 14.9622 29.4128C12.2585 29.4128 9.74074 28.6204 7.62191 27.2623C7.99691 27.3063 8.37731 27.3287 8.76389 27.3287C11.0077 27.3287 13.0725 26.5633 14.7106 25.2793C12.6157 25.24 10.848 23.8549 10.2384 21.9529C10.5301 22.01 10.8302 22.0386 11.1389 22.0386C11.5756 22.0386 11.9985 21.9815 12.4005 21.8711C10.2091 21.4313 8.55864 19.4946 8.55864 17.1767C8.55864 17.1559 8.55864 17.1358 8.55941 17.115C9.20448 17.4738 9.9429 17.689 10.7284 17.7145C9.4429 16.8542 8.59799 15.3904 8.59799 13.7284C8.59799 12.8511 8.8341 12.0278 9.24614 11.321C11.608 14.2176 15.1366 16.1242 19.1165 16.3233C19.0347 15.9738 18.9923 15.6073 18.9923 15.2323C18.9923 12.5887 21.1358 10.4444 23.7809 10.4444C25.1582 10.4444 26.402 11.0262 27.2755 11.956C28.3665 11.7423 29.3912 11.3426 30.3164 10.794C29.9576 11.9128 29.1991 12.8511 28.2099 13.4429C29.1798 13.3272 30.1026 13.0694 30.9606 12.689C30.3202 13.6512 29.5077 14.4946 28.5718 15.1698Z"
+                    fill="#989898"
+                  ></path>
+                </svg>
+              </a>
+
+              <a href="/" title="Instagram">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="38"
+                  height="38"
+                  viewBox="0 0 38 38"
+                  fill="none"
+                >
+                  <path
+                    d="M18.8453 22.5525C20.7222 22.5525 22.2437 21.031 22.2437 19.1542C22.2437 17.2773 20.7222 15.7559 18.8453 15.7559C16.9685 15.7559 15.447 17.2773 15.447 19.1542C15.447 21.031 16.9685 22.5525 18.8453 22.5525Z"
+                    fill="#989898"
+                  ></path>
+                  <path
+                    d="M23.0932 10.8127H14.5973C13.3616 10.8127 12.2803 11.1989 11.5852 11.894C10.8901 12.5891 10.5039 13.6704 10.5039 14.9062V23.402C10.5039 24.6378 10.8901 25.719 11.6624 26.4914C12.4348 27.1865 13.4388 27.5727 14.6746 27.5727H23.0932C24.3289 27.5727 25.4102 27.1865 26.1053 26.4914C26.8777 25.7963 27.2638 24.715 27.2638 23.4792V14.9834C27.2638 13.7477 26.8777 12.7436 26.1826 11.9713C25.4102 11.1989 24.4062 10.8127 23.0932 10.8127ZM18.8453 24.4061C15.9103 24.4061 13.5933 22.0118 13.5933 19.1541C13.5933 16.2192 15.9876 13.9021 18.8453 13.9021C21.7029 13.9021 24.1745 16.2192 24.1745 19.1541C24.1745 22.089 21.7802 24.4061 18.8453 24.4061ZM24.3289 14.9062C23.6338 14.9062 23.0932 14.3655 23.0932 13.6704C23.0932 12.9753 23.6338 12.4347 24.3289 12.4347C25.024 12.4347 25.5647 12.9753 25.5647 13.6704C25.5647 14.3655 25.024 14.9062 24.3289 14.9062Z"
+                    fill="#989898"
+                  ></path>
+                  <path
+                    d="M18.9997 0C8.49582 0 0 8.49582 0 18.9997C0 29.5037 8.49582 37.9995 18.9997 37.9995C29.5037 37.9995 37.9995 29.5037 37.9995 18.9997C38.0767 8.49582 29.5037 0 18.9997 0ZM29.1175 23.4794C29.1175 25.2558 28.4996 26.8004 27.4183 27.8817C26.337 28.963 24.7923 29.5037 23.0932 29.5037H14.6746C12.9754 29.5037 11.4307 28.963 10.3495 27.8817C9.19093 26.8004 8.65029 25.2558 8.65029 23.4794V14.9835C8.65029 11.4307 11.0446 8.95923 14.6746 8.95923H23.1704C24.9468 8.95923 26.4143 9.5771 27.4956 10.6584C28.5768 11.7397 29.1175 13.2071 29.1175 14.9835V23.4794Z"
+                    fill="#989898"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      new WOW().init();
+    </script>
+    <script src="./bootstrap/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./wow/wow.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
