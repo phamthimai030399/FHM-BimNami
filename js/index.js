@@ -12,10 +12,6 @@ wow.init();
 const swiperSlider = new Swiper(".slider-container", {
     loop: true,
     speed: 2000,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
   });
 const swiperSliderLibrary = new Swiper(".slider-library", {
     loop: true,
