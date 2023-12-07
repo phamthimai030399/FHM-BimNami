@@ -10,28 +10,65 @@ var wow = new WOW({
 wow.init();
 
 const swiperSlider = new Swiper(".slider-container", {
-    loop: true,
-    speed: 2000,
-  });
-const swiperSliderLibrary = new Swiper(".slider-library", {
-    loop: true,
-    speed: 1000,
-    slidesPerView: 3,
-    spaceBetween: 10,
-    breakpoints: {
-      992: {
-        slidesPerView: 4,
-      },
-      1199: {
-        slidesPerView: 5,
-      }},
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+  loop: true,
+  speed: 1000,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+const play = document.querySelector(".video-play");
+const video = document.querySelector("video");
+play.addEventListener("click", () => {
+  document.querySelector(".video-thumbnail").classList.add("hidden");
+  video.play();
+});
+
+// const swiperSliderFeedback = new Swiper(".feedback-slider", {
+//   direction: "horizontal",
+//   loop: true,
+//   speed: 1000,
+//   slidesPerView: 1,
+//   breakpoints: {
+//     576: {
+//       slidesPerView: 2,
+//       spaceBetween: 25,
+//     },
+//     992: {
+//       slidesPerView: 3,
+//     },
+//   },
+//   navigation: {
+//     nextEl: ".feedback-home .swiper-button-next",
+//     prevEl: ".feedback-home .swiper-button-prev",
+//   },
+// });
+const swiperSliderFeedback = new Swiper(".feedback-slider", {
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  speed: 800,
+  centeredSlides: true,
+  loop: true,
+  navigation: {
+    nextEl: ".feedback-home .swiper-button-next",
+    prevEl: ".feedback-home .swiper-button-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
     },
-  });
-  function clickProductImg(smallImg)
-  {
-      var fullImg = document.getElementById("imageBoxProductImg");
-      fullImg.src = smallImg.src;
-  }
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 25,
+    },
+  },
+});
+
+function clickProductImg(smallImg) {
+  var fullImg = document.getElementById("imageBoxProductImg");
+  fullImg.src = smallImg.src;
+}
