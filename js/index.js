@@ -21,32 +21,22 @@ const swiperSlider = new Swiper(".slider-container", {
     clickable: true,
   },
 });
+
 const play = document.querySelector(".video-play");
 const video = document.querySelector("video");
-play.addEventListener("click", () => {
-  document.querySelector(".video-thumbnail").classList.add("hidden");
-  video.play();
-});
 
-// const swiperSliderFeedback = new Swiper(".feedback-slider", {
-//   direction: "horizontal",
-//   loop: true,
-//   speed: 1000,
-//   slidesPerView: 1,
-//   breakpoints: {
-//     576: {
-//       slidesPerView: 2,
-//       spaceBetween: 25,
-//     },
-//     992: {
-//       slidesPerView: 3,
-//     },
-//   },
-//   navigation: {
-//     nextEl: ".feedback-home .swiper-button-next",
-//     prevEl: ".feedback-home .swiper-button-prev",
-//   },
-// });
+if (play) {
+  play.addEventListener("click", () => {
+    const thumbnail = document.querySelector(".video-thumbnail");
+    if (thumbnail) {
+      thumbnail.classList.add("hidden");
+    }
+    if (video) {
+      video.play();
+    }
+  });
+}
+
 const swiperSliderFeedback = new Swiper(".feedback-slider", {
   slidesPerView: "auto",
   spaceBetween: 20,
@@ -68,7 +58,22 @@ const swiperSliderFeedback = new Swiper(".feedback-slider", {
   },
 });
 
-function clickProductImg(smallImg) {
-  var fullImg = document.getElementById("imageBoxProductImg");
-  fullImg.src = smallImg.src;
-}
+const quantityForms = document.querySelectorAll('.detail-quantity');
+
+Array.from(quantityForms).forEach((quantityForm) => {
+  const increButton = quantityForm.querySelector('.qtyplus');
+  const decreButton = quantityForm.querySelector('.qtyminus');
+  const inputQuantity = quantityForm.querySelector('.qty');
+
+  increButton.addEventListener('click', () => {
+    inputQuantity.value = Number(inputQuantity.value) + 1;
+  });
+
+  decreButton.addEventListener('click', () => {
+    if (inputQuantity.value > 0) {
+      inputQuantity.value = Number(inputQuantity.value) - 1;
+    } else {
+      inputQuantity.value = 0;
+    }
+  });
+});
