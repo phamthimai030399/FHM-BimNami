@@ -450,7 +450,7 @@ footer .footer-main {
 }
 
 /* BANNER HOME */
-#fhm-banner-home {
+.banner {
   background: url(../image/banner-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -462,58 +462,58 @@ footer .footer-main {
   z-index: 2;
   width: auto;
 }
-#fhm-banner-home .decor-element:nth-child(1) {
+.banner .decor-element:nth-child(1) {
   top: 25%;
   left: 0;
   width: 18%;
   animation: updown ease-in-out 5s infinite alternate;
 }
-#fhm-banner-home .decor-element:nth-child(2) {
+.banner .decor-element:nth-child(2) {
   top: 22%;
   right: 0;
   width: 18%;
   animation: updown2 ease-in-out 4s infinite alternate;
 }
-#fhm-banner-home .decor-element:nth-child(3) {
+.banner .decor-element:nth-child(3) {
   bottom: 19%;
   left: 10%;
   width: 23%;
   animation: shockwaveJump 2s linear infinite;
 }
-#fhm-banner-home .decor-element:nth-child(4) {
+.banner .decor-element:nth-child(4) {
   bottom: 20%;
   right: 8%;
   width: 20%;
   animation: shockwaveJump 2.5s linear infinite;
 }
-#fhm-banner-home .decor-element:nth-child(5) {
+.banner .decor-element:nth-child(5) {
   bottom: 10%;
   right: 45%;
   width: 14%;
   animation: shockwaveJump 2.5s linear infinite;
 }
-#fhm-banner-home .decor-element:nth-child(6) {
+.banner .decor-element:nth-child(6) {
   bottom: 16%;
   right: 36%;
   width: 30%;
 }
-#fhm-banner-home .decor-element:nth-child(7) {
+.banner .decor-element:nth-child(7) {
   bottom: 17%;
   right: 43%;
   width: 12%;
   animation: fly-up 2s ease-in-out infinite;
 }
-#fhm-banner-home .banner-button {
+.banner .banner-button {
   position: absolute;
   bottom: 1%;
   width: 100%;
 }
-#fhm-banner-home .banner-button .box-button {
+.banner .banner-button .box-button {
   display: flex;
   gap: 15px;
   justify-content: center;
 }
-#fhm-banner-home .banner-button button {
+.banner .banner-button button {
   background: linear-gradient(
     180deg,
     #ef7c0f 3.37%,
@@ -522,7 +522,7 @@ footer .footer-main {
   );
   animation: zoom 1.5s ease-in-out infinite;
 }
-#fhm-banner-home .banner-button button:nth-child(2) {
+.banner .banner-button button:nth-child(2) {
   background: linear-gradient(
     180deg,
     #a4ce6a 3.37%,
@@ -531,42 +531,42 @@ footer .footer-main {
   );
 }
 @media (min-width: 480px) {
-  #fhm-banner-home .banner-button .box-button {
+  .banner .banner-button .box-button {
     gap: 35px;
   }
 }
 @media (min-width: 576px) {
-  #fhm-banner-home .banner-button .box-button {
+  .banner .banner-button .box-button {
     /* gap: 50px; */
   }
 }
 @media (min-width: 992px) {
-  #fhm-banner-home {
+  .banner {
     aspect-ratio: 1/1;
     background: url(../image/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
-  #fhm-banner-home .banner-button .box-button {
+  .banner .banner-button .box-button {
     gap: 80px;
   }
-  #fhm-banner-home .decor-element:nth-child(1) {
+  .banner .decor-element:nth-child(1) {
     top: 30%;
   }
-  #fhm-banner-home .decor-element:nth-child(2) {
+  .banner .decor-element:nth-child(2) {
     top: 25%;
   }
-  #fhm-banner-home .decor-element:nth-child(3) {
+  .banner .decor-element:nth-child(3) {
     bottom: 10%;
     width: 18%;
   }
-  #fhm-banner-home .decor-element:nth-child(4) {
+  .banner .decor-element:nth-child(4) {
     bottom: 10%;
     width: 18%;
   }
-  #fhm-banner-home .decor-element:nth-child(5),
-  #fhm-banner-home .decor-element:nth-child(6),
-  #fhm-banner-home .decor-element:nth-child(7) {
+  .banner .decor-element:nth-child(5),
+  .banner .decor-element:nth-child(6),
+  .banner .decor-element:nth-child(7) {
     display: none;
   }
 }
@@ -1572,5 +1572,136 @@ footer .footer-main {
   }
   .tabs .tabs-content .content-img {
     margin: 70px 15%;
+  }
+}
+
+/* BANNER GIFT  */
+#gifts-page #gifts {
+  z-index: -1;
+}
+#gifts-page #gifts .bg-pc {
+  display: none;
+}
+#gifts-page #gifts .bg-mobile #gifts-page #gifts .bg-pc {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.banner.banner-gift {
+  background: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.banner.banner-gift .decor-element:nth-child(1) {
+  top: 55%;
+  width: 22%;
+}
+.banner.banner-gift .decor-element:nth-child(2) {
+  top: 45%;
+  width: 22%;
+}
+.banner.banner-gift .decor-element:nth-child(3) {
+  bottom: auto;
+  top: 20%;
+  width: 30%;
+  left: 3%;
+}
+.banner.banner-gift .decor-element:nth-child(4) {
+  top: 12%;
+  width: 25%;
+  right: 0%;
+  bottom: auto;
+}
+#gifts-page footer {
+  margin-top: -11%;
+}
+#fhm-gifts-detail {
+  position: absolute;
+    width: 100%;
+    /* bottom: 30%; */
+    top: 33%;
+    aspect-ratio: 4/5;
+}
+#fhm-gifts-detail .gifts-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#fhm-gifts-detail .gift-item {
+  position: absolute;
+  z-index: 3;
+}
+#fhm-gifts-detail .gift-item:nth-child(1) {
+  width: 30%;
+  top: 5%;
+  right: 3%;
+}
+#fhm-gifts-detail .gift-item:nth-child(2) {
+  width: 30%;
+  top: 2%;
+  right: 35%;
+  z-index: 1;
+}
+#fhm-gifts-detail .gift-item:nth-child(3) {
+  width: 30%;
+  top: 10%;
+  left: 3%;
+}
+#fhm-gifts-detail .gift-item:nth-child(4) {
+  width: 30%;
+  top: 50%;
+  left: 3%;
+}
+#fhm-gifts-detail .gift-item:nth-child(5) {
+  width: 30%;
+  top: 55%;
+  right: 35%;
+}
+#fhm-gifts-detail .gift-item:nth-child(6) {
+  width: 30%;
+  top: 46%;
+  right: 3%;
+}
+#fhm-gifts-detail .gift-item:nth-child(7) {
+  width: 40%;
+  top: 32%;
+  right: 30%;
+  z-index: 2;
+}
+@media (min-width: 992px) {
+  #gifts-page #gifts .bg-pc {
+    display: block;
+  }
+  #gifts-page #gifts .bg-mobile {
+    display: none;
+  }
+  .banner.banner-gift .decor-element:nth-child(3),
+  .banner.banner-gift .decor-element:nth-child(4) {
+    top: 10%;
+    width: 17%;
+  }
+  .banner.banner-gift .decor-element:nth-child(3) {
+    left: 3%;
+  }
+  .banner.banner-gift .decor-element:nth-child(4) {
+    right: 3%;
+  }
+  .banner.banner-gift .decor-element:nth-child(1),
+  .banner.banner-gift .decor-element:nth-child(2) {
+    top: 35%;
+    width: 18%;
+  }
+  #fhm-gifts-detail {
+    position: absolute;
+    width: 100%;
+    /* bottom: 30%; */
+    top: 28%;
+    aspect-ratio: 4/5.5;
+  }
+}
+@media (min-width: 1200px) {
+  #gifts-page footer {
+    margin-top: -8%;
   }
 }
