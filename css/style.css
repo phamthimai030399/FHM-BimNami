@@ -2178,7 +2178,7 @@ select:focus {
   border: 2px solid var(--Linear, #a4ce6a);
   background: var(--Trng, #fff);
 }
-.register .main-form input:focus-visible {
+input:focus-visible {
   outline: none;
 }
 .register .register-form-submit {
@@ -2217,8 +2217,168 @@ select:focus {
   font-weight: 700;
   line-height: normal;
 }
-@media (min-width:992px) {
+@media (min-width: 992px) {
   .register .register-container .register-form {
     padding: 65px 40px;
+  }
+}
+
+/* BLOG LIST  */
+.blog-list {
+  margin: 120px 0;
+}
+.blog-list .blog-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+.blog-list .blog-list-container .blog-item .blog-content span {
+  color: var(--en, #000);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+}
+.blog-list .blog-list-container .blog-item {
+  margin-bottom: 50px;
+}
+.blog-list .blog-list-container .blog-item .blog-content {
+  margin-top: 20px;
+}
+.blog-list .blog-list-container .blog-item .blog-content p {
+  color: var(--Xm, #727272);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 10px;
+  line-height: 2em;
+  max-height: 4em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+.blog-list .blog-list-container .blog-item .blog-content a {
+  color: var(--xanh, #2d6038);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+  text-decoration: underline;
+}
+.blog-list .blog-list-container .blog-item .blog-content svg {
+  padding-left: 5px;
+}
+.blog-list .blog-list-container .blog-item-outstanding {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.blog-list .blog-list-container .blog-item-outstanding .blog-img {
+  width: 50%;
+}
+.blog-list .blog-list-container .blog-item-outstanding a {
+  color: var(--en, #000);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+.blog-list .blog-list-container .blog-item-outstanding p {
+  color: var(--Xm, #727272);
+  text-align: center;
+  font-family: Inter;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  gap: 5px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.blog-list .blog-list-container .block-right .blog-outstanding-container {
+  margin-top: 30px;
+}
+.blog-list .blog-list-container .block-right h3 {
+  color: var(--en, #000);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.blog-list .blog-list-container .block-right .question {
+  border-radius: 10px;
+  background: #faeace;
+  margin-top: 65px;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.blog-list .blog-list-container .block-right .question .question-title {
+  color: var(--en, #000);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+}
+.blog-list .blog-list-container .block-right .question p {
+  overflow: hidden;
+  color: var(--Xm, #727272);
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin-bottom: 0;
+}
+.blog-list .blog-list-container .block-right .question .form-question {
+  display: flex;
+  width: 100%;
+  height: 60px;
+}
+.blog-list
+  .blog-list-container
+  .block-right
+  .question
+  .form-question
+  input {
+  background: #faeace ;
+  border-bottom: 1px solid #727272;
+  border: none;
+  box-shadow: 0px -1px 0px 0px rgba(75, 75, 75, 0.5) inset;
+  width: 75%;
+}
+.blog-list .blog-list-container .block-right .question .form-question .submit-question {
+  background: #2d6038;
+  padding: auto;
+  width: 25%;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+}
+
+@media (min-width: 1400px) {
+  .blog-list .blog-list-container .block-right .question {
+    padding: 65px 65px 80px 65px;
+  }
+}
+@media (min-width: 1200px) {
+  .blog-list .blog-list-container .block-left {
+    width: 65%;
+  }
+  .blog-list .blog-list-container .block-right {
+    width: 30%;
+  }
+  .blog-list .blog-list-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
   }
 }
