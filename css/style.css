@@ -2093,10 +2093,9 @@ select:focus {
 }
 #fhm-contact-info .contact-info-container .item-info {
   display: flex;
-  /* justify-content: center; */
+  padding: 2% 10%;
   gap: 10px;
   align-items: center;
-  width: 50%;
 }
 #fhm-contact-info .contact-info-container .item-info .info span {
   color: #000;
@@ -2123,5 +2122,9 @@ select:focus {
     padding: 36px 0;
     border-radius: 5px;
     background: #f0f0f0;
+  }
+  #fhm-contact-info .contact-info-container .item-info {
+    justify-content: center;
+    padding: 0;
   }
 }
