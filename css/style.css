@@ -2128,3 +2128,97 @@ select:focus {
     padding: 0;
   }
 }
+
+/* REGISTER POPUP */
+.register {
+  margin-top: 15%;
+}
+.register .register-modal {
+  padding: 0px 20px;
+}
+.modal .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.modal .btn-close svg path {
+  fill: #fff;
+}
+.register .register-container .register-form {
+  margin-top: 30px;
+  padding: 40px 20px;
+  border-radius: 28px;
+  border: 1px solid var(--Linear, #a4ce6a);
+  background: linear-gradient(
+    32deg,
+    #508568 12.57%,
+    #85a694 34.43%,
+    #94afa0 56.28%,
+    #d9d9d9 78.14%,
+    #838b63 100%
+  );
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+}
+.register .modal-content {
+  background: none;
+}
+.register .main-form {
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.register .main-form input {
+  width: 100%;
+  padding: 14px 20px;
+  color: #454545;
+  font-size: 14px;
+  line-height: normal;
+  border-radius: 30px;
+  border: 2px solid var(--Linear, #a4ce6a);
+  background: var(--Trng, #fff);
+}
+.register .main-form input:focus-visible {
+  outline: none;
+}
+.register .register-form-submit {
+  border-radius: 30px;
+  border: 2px solid var(--Linear, #a4ce6a);
+  background: linear-gradient(
+    180deg,
+    #a4ce6a 3.37%,
+    #66b000 52.04%,
+    #a4ce6a 99.91%
+  );
+  box-shadow: 0px 0px 2px 0px #fff;
+  margin-top: 30px;
+  color: var(--Trng, #fff);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 15px 70px;
+}
+.register .button-register {
+  display: flex;
+  justify-content: center;
+}
+.register .modal-content {
+  border: none;
+}
+.register .register-container h2 {
+  color: var(--Trng, #fff);
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media (min-width:992px) {
+  .register .register-container .register-form {
+    padding: 65px 40px;
+  }
+}
