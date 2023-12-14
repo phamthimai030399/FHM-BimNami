@@ -77,3 +77,21 @@ Array.from(quantityForms).forEach((quantityForm) => {
     }
   });
 });
+
+const swiperSliderLibrary = new Swiper(".slider-library", {
+  loop: true,
+  speed: 1000,
+  slidesPerView: 3,
+  spaceBetween: 10,
+  breakpoints: {
+    992: {
+      slidesPerView: 4,
+    },
+    1199: {
+      slidesPerView: 5,
+    }},
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
