@@ -2430,6 +2430,9 @@ input:focus-visible {
 .blog-detail .item-detail-news .item-news-social {
   gap: 5px;
 }
+.blog-detail .item-detail-news .item-news-social img {
+ height: auto;
+}
 .blog-detail .item-detail-news .item-news-info svg {
   margin-right: 10px;
 }
